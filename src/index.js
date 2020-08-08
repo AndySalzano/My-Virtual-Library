@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import './css/index.css';
+import App from './js/App';
+import * as serviceWorker from './js/serviceWorker';
+import './fonts/Quantico-Bold.ttf'
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,0 +1,103 @@
+a{
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: var(--color-header);
+    color: white;
+    align-items: center;
+}
+
+.header__title{
+    margin-left: 20px;
+    font-family: 'Quantico-Bold';
+    cursor: pointer;
+}
+
+.header__search{
+    margin-left: 50px;
+    background-color: var(--color-primary);
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+.header__search:hover{
+    background-color: var(--color-highlight-primary);
+}
+
+.header__search:hover .header__input{
+    background-color: var(--color-highlight-primary);
+}
+
+.header__searchIcon{
+    margin-left: 10px;
+}
+
+.header__input{
+    background-color: var(--color-primary);
+    color: var(--color-font);
+    font-family: 'Quantico-Regular';
+    font-size: 16px;
+    border: none;
+    width: 300px;
+    padding: 10px;
+    border-radius: 0px 10px 10px 0;
+}
+
+.header__input:focus{
+    outline: none;
+    color: var(--color-font);
+}
+
+.header__options{
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.header__optionsIcon{
+    padding: 20px;
+    cursor: pointer;
+    color: var(--color-font);
+}
+
+.header__optionsIcon:hover{
+    color: var(--color-highlight-secondary);
+}
+
+.header_info{
+    display: none;
+    position: absolute;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--color-highlight-primary);
+    font-family: 'Quantico-Regular';
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--color-font);
+    opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--color-font);;
+}
+
+@font-face {
+    font-family: 'Quantico-Bold';
+    src: local('Quantico-Bold'), url(../fonts/Quantico-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Quantico-Regular';
+    src: local('Quantico-Regular'), url(../fonts/Quantico-Regular.ttf) format('truetype');
+}
+

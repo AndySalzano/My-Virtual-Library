@@ -5,6 +5,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import CreateIcon from '@material-ui/icons/Create';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
 import {Link} from "react-router-dom"
+import * as ROUTES from '../constants/constants';
 
 function Header() {
 
@@ -16,8 +17,6 @@ function Header() {
     const displayInfo = (e,type) => {
         e.preventDefault();
         type === "create" ? createInfoRef.current.style.display = "block" : listInfoRef.current.style.display ="block"
-        //createInfoRef.current.style.display = "block";
-        //console.log(type)
     }
 
     /* If the mouse leaves a DOM element, the infotip will disappear, according to the hovered DOM element*/
@@ -28,7 +27,7 @@ function Header() {
 
     return (
         <div className="header">
-            <Link to="/">
+            <Link to={ROUTES.LANDING}>
                 <h1 className="header__title">My Virtual Library</h1>
             </Link>
             <div className="header__search">
@@ -37,7 +36,7 @@ function Header() {
             </div>
             <div className="header__options">
                 <div onMouseEnter={e => displayInfo(e,"create")} onMouseLeave={e => hideInfo(e,"create")}>
-                    <Link to="/listAll">
+                    <Link to={ROUTES.UPLOAD}>
                         <IconButton>
                             <CreateIcon className="header__optionsIcon" />
                         </IconButton>
@@ -47,7 +46,7 @@ function Header() {
                     </div>
                 </div>
                 <div onMouseEnter={e => displayInfo(e,"list")} onMouseLeave={e => hideInfo(e,"list")}>
-                    <Link to="/listAll">
+                    <Link to={ROUTES.LISTALL}>
                         <IconButton>
                             <MenuBookIcon className="header__optionsIcon" />
                         </IconButton>

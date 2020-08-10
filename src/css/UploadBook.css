@@ -1,0 +1,219 @@
+.uploadBook{
+    width: 100%;
+    background-color: var(--color-primary);
+    color: var(--color-font);
+    min-height: 90vh;
+}
+
+.uploadBook__title{
+    padding: 20px 40px;
+    font-family: 'Quantico-Regular';
+    font-weight: 600;
+}
+
+.uploadBook__book{
+    display: flex;
+}
+
+.uploadBook_imageWrapper{
+    margin-left: 10vw;
+    margin-bottom: auto;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.uploadBook__img{
+    width: 25vw;
+    height: 35vw;
+    min-width: 200px;
+    min-height: 300px;
+    border: 1px solid var(--color-font);
+}
+
+.uploadBook__imgInput{
+    display: none;
+}
+
+.uploadBook__imgLbl{
+    margin: 20px 0;
+    width: 25vw;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.uploadBook__imgLbl:hover{
+    color: var(--color-highlight-secondary);
+}
+
+.uploadBook__dataWrapper{
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.uploadBook__dataInput{
+    width: 50%;
+    min-width: 300px;
+    background-color: var(--color-primary);
+    border: none;
+    border-bottom: 1px solid var(--color-font);
+    padding: 10px;
+    margin: 10px;
+    font-size: 24px;
+    font-family: 'Quantico-Regular';
+    transition: border 1s;
+    color: var(--color-font);
+}
+
+.uploadBook__dataInput:hover::-webkit-input-placeholder {
+    color: var(--color-highlight-secondary);
+}
+
+/* Firefox > 19 */
+.uploadBook__dataInput:focus::-moz-placeholder {
+    color: var(--color-highlight-secondary);
+}
+
+.uploadBook__dataInput:focus{
+    border: 1px solid var(--color-font);
+    border-radius: 5px;
+    outline: none;
+}
+
+.uploadBook__select{
+    width: 50%;
+    min-width: 300px;
+    margin: 20px 0px;
+    padding: 10px;
+    position: relative;
+}
+
+.uploadBook__select select {
+    display: none;
+}
+
+.uploadBook__txtArea{
+    width: 50%;
+    min-width: 300px;
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--color-primary);
+    color: var(--color-font);
+    border: 1px solid var(--color-font);
+    border-radius: 5px;
+    line-height: 150%;
+    text-align: justify; 
+    text-justify: auto; 
+    resize: none;
+}
+
+.uploadBook__toggle{
+    width: 50%;
+    background-color: var(--color-font) !important;
+}
+
+.select-items div,.select-selected {
+    color: var(--color-font);
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+.uploadBook_toggle{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.uploadBook__switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-right: 20px;
+}
+  
+.uploadBook__switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-header);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 5px;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--color-primary);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: var(--color-highlight-secondary);
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.uploadBook__hidden{
+    display: none;
+}
+
+.uploadBook__submit{
+    width: 40%;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: var(--color-primary);
+    color: var(--color-font);
+    border: 1px solid var(--color-font);
+    border-radius: 10px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.uploadBook__submit:hover{
+    color: var(--color-highlight-secondary);
+    opacity: 0.9;
+}
+
+.uploadBook__submitLbl{
+    cursor: pointer;
+}
+
+
+@font-face {
+    font-family: 'Quantico-Regular';
+    src: local('Quantico-Regular'), url(../fonts/Quantico-Regular.ttf) format('truetype');
+}

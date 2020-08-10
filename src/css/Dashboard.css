@@ -7,7 +7,7 @@ li{
     padding: 10px;
     text-align:justify; 
     text-justify:auto; 
-    font-family: 'Quantico-Regular';
+   
     line-height: 200%;
 }
 
@@ -36,6 +36,26 @@ li{
     line-height: 200%;
 }
 
+.dashboard__buttons{
+    display: flex;
+}
+
+.dashboard__btn{
+    margin: 30px;
+    padding: 20px 40px;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-font);
+    border-radius: 10px;
+    color: var(--color-font);
+    font-weight: 700;
+    transition: background-color 1s;
+}
+
+.dashboard__btn:hover{
+    background-color: var(--color-header);
+    
+}
+
 .dashboard__subtitle{
     margin: 30px;
     width: 60%;
@@ -47,9 +67,11 @@ li{
 
 .dashboard__features{
     width: 50%;
+    min-width: 300px;
     text-align: left;
     background-color: var(--color-header);
     border-radius: 15px;
+    margin-bottom: 20px;
 }
 
 @font-face {

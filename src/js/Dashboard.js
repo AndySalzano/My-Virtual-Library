@@ -9,6 +9,10 @@ function Dashboard() {
             Do you want to have an online record where you can save each book you have, and keep track of them? 
             You have come to the perfect place. 
         </p>
+        <div className="dashboard__buttons">
+            <button className="dashboard__btn">Get Started</button>
+            <button className="dashboard__btn">Go to GitHub</button>
+        </div>
         <p className="dashboard__subtitle">With this application you will be able to:</p>
         <div className="dashboard__features">
             <ul>

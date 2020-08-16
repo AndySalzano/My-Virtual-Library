@@ -7,6 +7,9 @@ import MenuBookIcon from '@material-ui/icons/MenuBook';
 import {Link} from "react-router-dom"
 import * as ROUTES from '../constants/constants';
 
+/**
+ * Handles the Header of the website in the top of the website, for each page.
+ */
 function Header() {
 
     /* Gets the referencse of 2 DOM elements */

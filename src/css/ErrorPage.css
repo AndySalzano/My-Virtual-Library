@@ -1,0 +1,27 @@
+.error{
+    height: 90vh;
+    background-color: var(--color-primary);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.error__title{
+    color: var(--color-font);
+}
+
+.error__btn{
+    margin-top: 10vh;
+    padding: 4vh;
+    color: var(--color-font);
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-font);
+    border-radius: 10px;
+    font-size: 20px;
+    transition: background-color 1s;
+}
+
+.error__btn:hover{
+    background-color: var(--color-header);
+}

@@ -1,0 +1,32 @@
+.info{
+    height: 90vh;
+    background-color: var(--color-primary);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.info__title{
+    color: var(--color-font);
+}
+
+.info__explanation{
+    margin-top: 15px;
+    color: var(--color-font);
+}
+
+.info__btn{
+    margin: 10vh 5vw;
+    padding: 4vh;
+    color: var(--color-font);
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-font);
+    border-radius: 10px;
+    font-size: 20px;
+    transition: background-color 1s;
+}
+
+.info__btn:hover{
+    background-color: var(--color-header);
+}

@@ -1,6 +1,9 @@
 import React from 'react';
 import '../css/Dashboard.css';
 
+/**
+ * Landing Page, the only interaction is with the buttons
+ */
 function Dashboard() {
   return (
     <div className="dashboard">

@@ -1,0 +1,113 @@
+hr{
+    height: 1px;
+    margin: 20px 0px;
+    border: none;
+    background-color: var(--color-header)
+}
+
+.book{
+    min-height: 90vh;
+    padding: 5vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-primary);
+    color: var(--color-font);
+}
+
+.book__img{
+    width: 25vw;
+    height: 35vw;
+    margin-left: -10vw;
+    min-width: 200px;
+    min-height: 300px;
+    border: 1px solid var(--color-header);
+}
+
+.book__data{
+    width: 50%;
+    margin-left: 5vw;
+}
+
+.book__title{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Quantico-Regular';
+}
+
+.book__author{
+    font-size: 20px;
+    font-family: 'Quantico-Regular';
+}
+
+.book__genresContainer{
+    display: flex;
+}
+
+.book__genre{
+    min-width: fit-content;
+    height: fit-content;
+    margin: 20px 20px 20px 0px;
+    padding: 8px 20px;
+    background-color: var(--color-header);
+    color: var(--color-font);
+    border-radius: 10px;
+    text-align: center;
+    cursor: default;
+}
+
+.book__description{
+    text-align: justify; 
+    text-justify: auto; 
+    line-height: 200%;
+}
+
+.book__language{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.book__options{
+    margin-top: 20px;
+    display: flex;
+}
+
+.upload__update{
+    width: 40%;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: var(--color-primary);
+    color: var(--color-font);
+    border: 1px solid var(--color-font);
+    border-radius: 10px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.upload__delete{
+    width: 40%;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: var(--color-primary);
+    color: red;
+    border: 1px solid red;
+    border-radius: 10px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.upload__update:hover{
+    background-color: var(--color-header);
+}
+
+.upload__delete:hover{
+    background-color: var(--color-header);
+}
+
+@font-face {
+    font-family: 'Quantico-Regular';
+    src: local('Quantico-Regular'), url(../fonts/Quantico-Regular.ttf) format('truetype');
+}

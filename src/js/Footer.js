@@ -1,6 +1,9 @@
 import React from 'react';
 import '../css/Footer.css';
 
+/**
+ * Handles the Footer of the website in the bottom of the website, for each page.
+ */
 function Footer() {
   return (
     <div className="footer">

@@ -4,13 +4,10 @@ import './css/index.css';
 import App from './js/App';
 import * as serviceWorker from './js/serviceWorker';
 import './fonts/Quantico-Bold.ttf'
-import Firebase, { FirebaseContext } from './firebase';
 
 ReactDOM.render(
   <React.StrictMode>
-      <FirebaseContext.Provider value={new Firebase()}>
         <App />
-    </FirebaseContext.Provider>,
   </React.StrictMode>,
   document.getElementById('root')
 );

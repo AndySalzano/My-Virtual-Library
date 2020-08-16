@@ -190,6 +190,16 @@ input:checked + .slider:before {
     display: none;
 }
 
+.uploadBook__errors{
+    width: fit-content;
+    margin: 10px auto;
+    padding: 15px;
+    border: 1px solid red;
+    border-radius: 5px;
+    color: red;
+    font-size: 18px;
+}
+
 .uploadBook__submit{
     width: 40%;
     padding: 20px;

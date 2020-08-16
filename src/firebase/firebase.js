@@ -1,4 +1,6 @@
-import app from 'firebase/app';
+import Firebase from 'firebase/app';
+import 'firebase/database';
+import 'firebase/storage';
 
 const config = {
     apiKey: process.env.REACT_APP_API_KEY,
@@ -11,10 +13,9 @@ const config = {
     measurementId: process.env.REACT_APP_MEASUREMENT_ID
 };
 
-class Firebase {
-    constructor() {
-        app.initializeApp(config);
-    }
-}
-   
-export default Firebase;
+const firebaseApp = Firebase.initializeApp(config);
+const db = firebaseApp.database();
+const storage = firebaseApp.storage();
+
+export default firebaseApp
+export { db as Database, storage as Storage }

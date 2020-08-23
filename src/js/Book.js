@@ -55,12 +55,18 @@ function Book() {
         }
     }, [uid]) 
 
+    /**
+     * Redirects the user to the Edit Book page
+     */
     const updateBook = () => {
         history.push({
             pathname: `${ROUTES.EDIT}/${uid}`,
         });
     }
 
+    /**
+     * Deletes the specified book from both the DB and Storage
+     */
     const deleteBook = () => {
         Database.ref('/books/' + uid).remove()
         try{
@@ -80,7 +86,7 @@ function Book() {
 
     return (
         <div className="book">
-            <img ref={imgRef} className="book__img" alt="cover"></img>
+            <img ref={imgRef} src={BlackBookIcon} className="book__img" alt="cover"></img>
             <div className="book__data">
                 <p className="book__title">{title}</p>
                 <p className="book__author">{author}</p>

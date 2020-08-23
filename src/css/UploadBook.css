@@ -211,11 +211,11 @@ input:checked + .slider:before {
     font-size: 24px;
     text-align: center;
     cursor: pointer;
+    transition: background-color 1s;
 }
 
 .uploadBook__submit:hover{
-    color: var(--color-highlight-secondary);
-    opacity: 0.9;
+    background-color: var(--color-header);
 }
 
 .uploadBook__submitLbl{

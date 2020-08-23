@@ -6,6 +6,7 @@ import Dashboard from './Dashboard';
 import UploadBook from './UploadBook';
 import SavedInfo from './SavedInfo';
 import Book from './Book';
+import ListAll from './ListAll';
 import { BrowserRouter as Router,Switch, Route } from "react-router-dom";
 import * as ROUTES from '../constants/constants';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -23,6 +24,8 @@ function App() {
                 </Route>
                 <Route path={ROUTES.LISTALL}>
                     <Header />
+                    <ListAll />
+                    <Footer />
                 </Route>
                 <Route path={ROUTES.SAVED}>
                     <Header />

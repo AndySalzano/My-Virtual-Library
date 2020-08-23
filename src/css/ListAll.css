@@ -1,0 +1,6 @@
+.listall{
+    width: 100%;
+    min-height: 90vh;
+    color: var(--color-font);
+    background-color: var(--color-primary);
+}

@@ -85,6 +85,11 @@
     outline: none;
 }
 
+.editBook__categoriesWarning{
+    margin-top: 20px;
+    color: yellow;
+}
+
 .editBook__select{
     width: 50%;
     min-width: 300px;
@@ -211,11 +216,11 @@ input:checked + .slider:before {
     font-size: 24px;
     text-align: center;
     cursor: pointer;
+    transition: background-color 1s;
 }
 
 .editBook__submit:hover{
-    color: var(--color-highlight-secondary);
-    opacity: 0.9;
+    background-color: var(--color-header);
 }
 
 .editBook__submitLbl{

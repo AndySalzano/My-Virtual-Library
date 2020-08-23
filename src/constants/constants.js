@@ -3,3 +3,4 @@ export const UPLOAD = '/upload';
 export const LISTALL = '/listAll';
 export const SAVED = '/savedInfo';
 export const BOOK = '/book';
+export const EDIT = '/edit';

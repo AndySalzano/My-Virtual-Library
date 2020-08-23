@@ -64,7 +64,7 @@ a{
 }
 
 .header__optionsIcon{
-    padding: 20px;
+    margin: 0px 20px;
     cursor: pointer;
     color: var(--color-font);
 }

@@ -5,3 +5,7 @@
     --color-highlight-primary: #505050;
     --color-highlight-secondary: #B0E0E6;
 }
+
+p{
+    margin-bottom: 0!important;
+}

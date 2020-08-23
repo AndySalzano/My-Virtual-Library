@@ -8,6 +8,8 @@ import SavedInfo from './SavedInfo';
 import Book from './Book';
 import { BrowserRouter as Router,Switch, Route } from "react-router-dom";
 import * as ROUTES from '../constants/constants';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import EditBook from './EditBook';
 
 function App() {
   return (
@@ -30,6 +32,11 @@ function App() {
                 <Route path={`${ROUTES.BOOK}/:uid`}>
                     <Header />
                     <Book />
+                    <Footer />
+                </Route>
+                <Route path={`${ROUTES.EDIT}/:uid`}>
+                    <Header />
+                    <EditBook />
                     <Footer />
                 </Route>
                 <Route path={ROUTES.LANDING}>

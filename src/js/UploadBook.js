@@ -9,7 +9,7 @@ import * as ROUTES from '../constants/constants';
 
 function UploadBook() {
 
-    let imgRef = React.createRef();
+    let imgRef = React.useRef(null);
     const history = useHistory();
 
     const [imageAsFile, setImageAsFile] = React.useState('');

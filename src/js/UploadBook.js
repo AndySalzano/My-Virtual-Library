@@ -48,7 +48,7 @@ function UploadBook() {
         }else{
             let newBookRef = Database.ref('books').push()
             let strings = String(newBookRef).split("/")
-            CreateFirebaseDatabaseBook(newBookRef)
+            CreateFirebaseDatabaseBook(newBookRef, strings[strings.length - 1])
             if(imageAsFile !== ''){
                 CreateFirebaseStorageBook(strings[strings.length - 1])
             }
@@ -70,10 +70,11 @@ function UploadBook() {
     }
 
     /* Stores the plain data into Firebase Database, in the "books" collection */
-    const CreateFirebaseDatabaseBook = (uid) => {
+    const CreateFirebaseDatabaseBook = (ref, uid) => {
         let genresNames = [];
         genres.map(genre => genresNames.push(genre.value))
-        uid.set({
+        ref.set({
+            uid: uid,
             title: title, 
             author: author,
             imgName: title,

@@ -15,7 +15,7 @@ function ListAll() {
      * React.useEffect runs upon a condition. Here it gets all the books from the collection in Database
      */
     React.useEffect(() => {
-        const unsuscribe = Database.ref('books').once('value', (snapshot) => {
+        Database.ref('books').once('value', (snapshot) => {
             let tmp = [];
             snapshot.forEach(snap => {
                 tmp.push(snap.val());
@@ -26,9 +26,9 @@ function ListAll() {
 
     return (
         <div className="listall">
+            <h2 className="listall__title">List of all your books</h2>
             {books.map(book =>
-                /*<BookRow key={book.uid} book={book}/>*/
-                <p>{book.uid}</p>
+                <BookRow key={book.uid} book={book}/>
             )}
         </div>
     );

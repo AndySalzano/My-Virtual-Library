@@ -4,3 +4,9 @@
     color: var(--color-font);
     background-color: var(--color-primary);
 }
+
+.listall__title{
+    padding: 20px 40px;
+    font-family: 'Quantico-Regular';
+    font-weight: 600;
+}

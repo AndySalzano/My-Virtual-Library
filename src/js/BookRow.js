@@ -7,7 +7,8 @@ import '../css/BookRow.css';
 function BookRow(props) {
 
     return (
-        <div className="listall">
+        <div className="bookrow">
+            <p>{props.book.title}</p>
         </div>
     );
 }

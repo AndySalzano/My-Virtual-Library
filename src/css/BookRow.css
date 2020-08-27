@@ -1,0 +1,5 @@
+.bookrow{
+    border: 1px solid var(--color-font);
+    margin: 5vh 5vw;
+    padding: 20px;
+}

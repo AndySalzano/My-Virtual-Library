@@ -30,6 +30,7 @@ function ListAll() {
             {books.map(book =>
                 <BookRow key={book.uid} book={book}/>
             )}
+            <br></br>
         </div>
     );
 }

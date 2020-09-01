@@ -35,7 +35,7 @@ function Header() {
             </Link>
             <div className="header__search">
                 <SearchIcon className="header__searchIcon" />
-                <input className="header__input" placeholder="Search for one of your books" type="text" />
+                <input className="header__input" placeholder="Search for title, category, etc..." type="text" />
             </div>
             <div className="header__options">
                 <div onMouseEnter={e => displayInfo(e,"create")} onMouseLeave={e => hideInfo(e,"create")}>

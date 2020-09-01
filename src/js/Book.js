@@ -34,7 +34,6 @@ function Book() {
     React.useEffect(() => {
         try{
             Database.ref('/books/' + uid).once('value').then(function(snapshot) {
-                console.log("%cBook: ", "color: blue;", snapshot.val());
                 setTitle(snapshot.val().title)
                 setAuthor(snapshot.val().author)
                 setGenres(snapshot.val().genres)

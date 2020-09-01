@@ -10,12 +10,16 @@ hr{
     margin: 5vh 5vw 0vh;
     padding: 10px;
     display: flex;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.bookrow:hover{
+    background-color: var(--color-header);
 }
 
 .bookrow__img{
-    max-width: 350px;
-    min-height: 90px;
-    max-height: 200px;
+    width: 150px;
     border: 1px solid var(--color-font);
 }
 

@@ -92,6 +92,7 @@ function EditBook() {
         let genresNames = [];
         genres.map(genre => genresNames.push(genre.value))
         Database.ref(`books/${uid}`).set({
+            uid: uid,
             title: title, 
             author: author,
             imgName: title,
@@ -178,7 +179,7 @@ function EditBook() {
                               </div> : null }
             </div>
             <div className="editBook__submit">
-                <label className="editBook__submitLbl" htmlFor="submit-form">Add book!</label>
+                <label className="editBook__submitLbl" htmlFor="submit-form">Update book!</label>
             </div>
             <br></br>
         </div>

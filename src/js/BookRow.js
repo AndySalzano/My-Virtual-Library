@@ -2,6 +2,8 @@ import React from 'react';
 import '../css/BookRow.css';
 import BlackBookIcon from '../assets/black_book_icon.svg';
 import { Storage } from '../firebase/firebase';
+import { useHistory } from "react-router-dom";
+import * as ROUTES from '../constants/constants';
 
 /**
  * This page displays a list of all the books saved by the user
@@ -9,6 +11,7 @@ import { Storage } from '../firebase/firebase';
 function BookRow(props) {
 
     const imgRef = React.createRef()
+    const history = useHistory();
 
     React.useEffect(() => {
         try{
@@ -19,9 +22,18 @@ function BookRow(props) {
             imgRef.current.src = BlackBookIcon
         }
     })
+    
+    /**
+     * It redirects to the page with all the details of the book row that has been clicked (given his uid)
+     */
+    const goToBook = () => {
+        history.push({
+            pathname: `${ROUTES.BOOK}/${props.book.uid}`
+        });
+    }
 
     return (
-        <div className="bookrow">
+        <div className="bookrow" onClick={goToBook}>
             <img ref={imgRef} className="bookrow__img" src={BlackBookIcon} alt="Cover"/>
             <div className="bookrow__data">
                 <div className="bookrow__top">

@@ -2,7 +2,7 @@ import React from 'react';
 import { useLocation } from "react-router-dom";
 import ErrorPage from './ErrorPage';
 import '../css/SavedInfo.css';
-import qs from 'qs'
+import qs from 'qs';
 import InfoPage from './InfoPage';
 
 /**

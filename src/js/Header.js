@@ -1,10 +1,10 @@
 import React from 'react';
 import '../css/Header.css';
-import IconButton from '@material-ui/core/IconButton'
+import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
 import CreateIcon from '@material-ui/icons/Create';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
-import {Link} from "react-router-dom"
+import {Link, useHistory} from "react-router-dom";
 import * as ROUTES from '../constants/constants';
 
 /**
@@ -15,6 +15,21 @@ function Header() {
     /* Gets the referencse of 2 DOM elements */
     const createInfoRef = React.createRef()
     const listInfoRef = React.createRef()
+    const history = useHistory();
+
+    const [search, setSearch] = React.useState()
+
+    const handleSearchChange = e => setSearch(e.target.value)
+
+    const submitSearch = (e) => {
+        e.preventDefault()
+        if(search){
+            history.push({
+                pathname: ROUTES.SEARCH,
+                search: `?query=${search}`,
+            });
+        }
+    }
 
     /* If the mouse enters a DOM element, a infotip will appear, according to the hovered DOM element*/
     const displayInfo = (e,type) => {
@@ -33,10 +48,12 @@ function Header() {
             <Link to={ROUTES.LANDING}>
                 <h1 className="header__title">My Virtual Library</h1>
             </Link>
-            <div className="header__search">
-                <SearchIcon className="header__searchIcon" />
-                <input className="header__input" placeholder="Search for title, category, etc..." type="text" />
-            </div>
+            <form id="uploadBookForm" className="header__search" onSubmit={e => submitSearch(e)} noValidate>
+                <IconButton className="header__searchBtn" type="submit">
+                    <SearchIcon className="header__searchIcon" />
+                </IconButton>
+                <input className="header__input" placeholder="Search for title, category, etc..." type="text" onChange={handleSearchChange}/>
+            </form>
             <div className="header__options">
                 <div onMouseEnter={e => displayInfo(e,"create")} onMouseLeave={e => hideInfo(e,"create")}>
                     <Link to={ROUTES.UPLOAD}>

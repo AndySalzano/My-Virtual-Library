@@ -1,0 +1,11 @@
+.search{
+    min-height: 90vh;
+    background-color: var(--color-primary);
+    color: var(--color-font);
+}
+
+.search__title{
+    padding: 20px 40px;
+    font-family: 'Quantico-Regular';
+    font-weight: 600;
+}

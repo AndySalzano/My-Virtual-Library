@@ -15,6 +15,7 @@ function Header() {
     /* Gets the referencse of 2 DOM elements */
     const createInfoRef = React.createRef()
     const listInfoRef = React.createRef()
+    
     const history = useHistory();
 
     const [search, setSearch] = React.useState()

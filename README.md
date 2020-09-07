@@ -12,9 +12,9 @@ Also, this can be considered as a visual guide about how to deploy a small appli
 
 2nd. Create a new project in Google Firebase with the desired name. 
 
-3rd. Once is created, add a Web app to the project, do not select Firebase Hosting checkbox, write the name you wish, and from the Firebase SDK code, copy the variable firebaseConfig.
+3rd. Once is created, add a Web app to the project, do not select Firebase Hosting checkbox, write the name you wish, and from the Firebase SDK code, copy the variable *firebaseConfig*.
 
-4th. In the project root, create a new file called “.env”. In this file, copy the data from the variable firebaseConfig in a way that it is saved with the following constants. Change the values between quotes for your values. Example:
+4th. In the project root, create a new file called “.env”. In this file, copy the data from the variable *firebaseConfig* in a way that it is saved with the following constants. Change the values between quotes for your values. Example:
 
 ```
 REACT_APP_API_KEY="myapikey"
@@ -36,7 +36,7 @@ Now that the backend is ready to be used according to your own project, it is ti
 ## STEP 2: Deploy the website
 1st. Run the following code in the console: **firebase login**. Login with the email associated to your firebase account.
 
-2nd. Run the following code in the console: firebase init. Say yes to proceed. When choosing which features do you want, choose only Hosting. When choosing a project, choose an existing project, and then use the project with the name you used when creating the project in Firebase. When choosing the public directory, type “build”. When choosing the configuration as a single-page app, write “y”.
+2nd. Run the following code in the console: **firebase init**. Say yes to proceed. When choosing which features do you want, choose only Hosting. When choosing a project, choose an existing project, and then use the project with the name you used when creating the project in Firebase. When choosing the public directory, type “build”. When choosing the configuration as a single-page app, write “y”.
 
 3rd. Run the following code in the console: **npm install**.
 

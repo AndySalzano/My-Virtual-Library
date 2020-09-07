@@ -8,7 +8,7 @@ Also, this can be considered as a visual guide about how to deploy a small appli
 
 # Steps to use the application
 ## STEP 1: Create the project
-1st. Clone the project from the GitHub repository into your local system, using this command in the console (from the root directory): git clone https://github.com/AndySalzano/My-Virtual-Library.git
+1st. Clone the project from the GitHub repository using this command in the console: **git clone https://github.com/AndySalzano/My-Virtual-Library.git**.
 
 2nd. Create a new project in Google Firebase with the desired name. 
 
@@ -34,15 +34,15 @@ REACT_APP_MEASUREMENT_ID="mymeasurementid"
 Now that the backend is ready to be used according to your own project, it is time to deploy the website to start using it
 
 ## STEP 2: Deploy the website
-1st. Run the following code in the console: firebase login. Login with the email associated to your firebase account.
+1st. Run the following code in the console: **firebase login**. Login with the email associated to your firebase account.
 
 2nd. Run the following code in the console: firebase init. Say yes to proceed. When choosing which features do you want, choose only Hosting. When choosing a project, choose an existing project, and then use the project with the name you used when creating the project in Firebase. When choosing the public directory, type “build”. When choosing the configuration as a single-page app, write “y”.
 
-3rd. Run the following code in the console: npm install.
+3rd. Run the following code in the console: **npm install**.
 
-4th. Run the following code in the console: npm run build.
+4th. Run the following code in the console: **npm run build**.
 
-5th. Run the following code in the console: firebase deploy.
+5th. Run the following code in the console: **firebase deploy**.
 
 Congratulations, now the website is uploaded and ready to be used by you. Since the design is very straightforward, with a quick view of the different features in the header there might not further problems to understand how to add, list and filters different books.
 

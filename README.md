@@ -13,14 +13,14 @@ Also, this can be considered as a visual guide about how to deploy a small appli
 3rd. Once is created, add a Web app to the project, do not select Firebase Hosting checkbox, write the name you wish, and from the Firebase SDK code, copy the variable firebaseConfig.
 4th. In the project root, create a new file called “.env”. In this file, copy the data from the variable firebaseConfig in a way that it is saved with the following constants. Change the values between quotes for your values. Example:
 
-*REACT_APP_API_KEY*="myapikey"
-*REACT_APP_AUTH_DOMAIN*="mydomain.firebaseapp.com"
-*REACT_APP_DATABASE_URL*="mydatabaseurl"
-*REACT_APP_PROJECT_ID*="myid"
-*REACT_APP_STORAGE_BUCKET*="mystoragebucket.appspot.com"
-*REACT_APP_MESSAGING_SENDER_ID*="mymessagingsenderid"
-*REACT_APP_APP_ID*="myappid"
-*REACT_APP_MEASUREMENT_ID*="mymeasurementid "
+**REACT_APP_API_KEY**="myapikey"
+**REACT_APP_AUTH_DOMAIN**="mydomain.firebaseapp.com"
+**REACT_APP_DATABASE_URL**="mydatabaseurl"
+**REACT_APP_PROJECT_ID**="myid"
+**REACT_APP_STORAGE_BUCKET**="mystoragebucket.appspot.com"
+**REACT_APP_MESSAGING_SENDER_ID**="mymessagingsenderid"
+**REACT_APP_APP_ID**="myappid"
+**REACT_APP_MEASUREMENT_ID**="mymeasurementid "
 
 5th. In the Realtime Database section, enable the feature in locked mode.
 6th. In the Storage section, enable the feature considering your nearest location.

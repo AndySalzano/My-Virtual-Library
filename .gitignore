@@ -3,6 +3,7 @@
 #local files
 bibliography.md
 firebase.env
+.env
 
 # dependencies
 /node_modules

@@ -1,8 +1,9 @@
 import React from 'react';
-import qs from 'qs'
+import qs from 'qs';
 import { useLocation } from "react-router-dom";
 import '../css/Dashboard.css';
 import Message from './Message';
+import * as ROUTES from '../constants/constants';
 
 /**
  * Landing Page, the only interaction is with the buttons
@@ -21,10 +22,10 @@ function Dashboard() {
                 You have come to the perfect place. 
             </p>
             <div className="dashboard__buttons">
-                <button className="dashboard__btn">Get Started</button>
-                <button className="dashboard__btn">Go to GitHub</button>
+                <a className="dashboard__btn" href={ROUTES.GETSTARTED}>Get Started</a>
+                <a className="dashboard__btn" rel="noopener noreferrer" target="_blank" href={ROUTES.GITHUB}>Go to GitHub</a>
             </div>
-            <p className="dashboard__subtitle">With this application you will be able to:</p>
+            <div className="dashboard__subtitle">With this application you will be able to:</div>
             <div className="dashboard__features">
                 <ul>
                     <li>●   Add any record of book you have in your physical library so you don't forget you have it in your possesion already</li>

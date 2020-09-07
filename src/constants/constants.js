@@ -4,5 +4,6 @@ export const LISTALL = '/listAll';
 export const SAVED = '/savedInfo';
 export const BOOK = '/book';
 export const EDIT = '/edit';
-export const SEARCH = '/search'
+export const SEARCH = '/search';
 export const GITHUB = 'https://github.com/AndySalzano/My-Virtual-Library';
+export const GETSTARTED = '/getstarted';

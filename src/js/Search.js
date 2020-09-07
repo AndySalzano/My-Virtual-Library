@@ -19,6 +19,34 @@ function Search() {
      * React.useEffect runs upon a condition. Here it gets all the books from the collection in Database, and filters them if they contain the query in their strings
      */
     React.useEffect(() => {
+        /**
+         * Filters the books of the owner, and cleans the strings, making both of them:
+         * - Lowercase (String.prototype.toLowerCase())
+         * - Only in english characters (npm library Diacritics.js)
+         * @param {snapshot} snap 
+         * @param {Array} tmp 
+         */
+        const filterBook = (snap, tmp) => {
+            const title = Diacritics.clean(snap.val().title.toLowerCase())
+            if(title.includes(query)){
+                tmp.push(snap.val())
+                return;
+            }
+
+            const author = Diacritics.clean(snap.val().author.toLowerCase())
+            if(author.includes(query)){
+                tmp.push(snap.val())
+                return;
+            }
+
+            for(var i = 0; i < snap.val().genres.length;i++){
+                if(snap.val().genres[i].toLowerCase() === query){
+                    tmp.push(snap.val())
+                    return;
+                }
+            }
+        }
+
         Database.ref('books').once('value', (snapshot) => {
             let tmp = [];
             snapshot.forEach(snap => {
@@ -27,34 +55,6 @@ function Search() {
             setBooks(tmp); 
         });
     }, [query])
-
-    /**
-     * Filters the books of the owner, and cleans the strings, making both of them:
-     * - Lowercase (String.prototype.toLowerCase())
-     * - Only in english characters (npm library Diacritics.js)
-     * @param {snapshot} snap 
-     * @param {Array} tmp 
-     */
-    const filterBook = (snap, tmp) => {
-        const title = Diacritics.clean(snap.val().title.toLowerCase())
-        if(title.includes(query)){
-            tmp.push(snap.val())
-            return;
-        }
-
-        const author = Diacritics.clean(snap.val().author.toLowerCase())
-        if(author.includes(query)){
-            tmp.push(snap.val())
-            return;
-        }
-
-        for(var i = 0; i < snap.val().genres.length;i++){
-            if(snap.val().genres[i].toLowerCase() === query){
-                tmp.push(snap.val())
-                return;
-            }
-        }
-    }
 
     return (
         <div className="search">

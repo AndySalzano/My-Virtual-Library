@@ -2,7 +2,6 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import '../css/Footer.css';
 import * as ROUTES from '../constants/constants';
-import Logo from '../assets/logo_white.png';
 
 /**
  * Handles the Footer of the website in the bottom of the website, for each page.
@@ -25,8 +24,7 @@ function Footer() {
             <Link className="footer__link" to={ROUTES.LISTALL}>
                  <div>List all</div>
             </Link>
-            
-            <a className="footer__link" target="_blank" href="https://github.com/AndySalzano/My-Virtual-Library">Github</a>
+            <a className="footer__link" rel="noopener noreferrer" target="_blank" href={ROUTES.GITHUB}>Github</a>
         </div>
         <div className="footer__info">
             <div className="footer__name">My Virtual Library</div>

@@ -12,6 +12,7 @@ import * as ROUTES from '../constants/constants';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import EditBook from './EditBook';
 import Search from './Search';
+import GetStarted from './GetStarted';
 
 function App() {
   return (
@@ -46,6 +47,11 @@ function App() {
                 <Route path={ROUTES.SEARCH}>
                     <Header />
                     <Search />
+                    <Footer />
+                </Route>
+                <Route path={ROUTES.GETSTARTED}>
+                    <Header />
+                    <GetStarted />
                     <Footer />
                 </Route>
                 <Route path={ROUTES.LANDING}>

@@ -27,9 +27,9 @@ REACT_APP_APP_ID="myappid"
 REACT_APP_MEASUREMENT_ID="mymeasurementid"
 ```
 
-5th. In the Realtime Database section, enable the feature in locked mode.
+5th. In the Realtime Database section, enable the feature in locked mode. In the rules section, set both read and write to true.
 
-6th. In the Storage section, enable the feature considering your nearest location.
+6th. In the Storage section, enable the feature considering your nearest location. In the rules section, **allow read, write**;
 
 Now that the backend is ready to be used according to your own project, it is time to deploy the website to start using it
 

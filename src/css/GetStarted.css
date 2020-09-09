@@ -1,5 +1,48 @@
+span{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .getstarted{
     min-height: 90vh;
     background-color: var(--color-primary);
     color: var(--color-font);
+}
+
+.getstarted__wrapper{
+    width: 60%;
+    margin: auto;
+    padding: 5vh;
+    text-align: justify;
+    text-justify: auto;
+    line-height: 200%;
+}
+
+.getstarted__ul{
+    margin-left: 25px;
+    list-style-type: disc;
+}
+
+.getstarted__link{
+    text-decoration: underline!important;
+    color: var(--color-highlight-secondary)!important;
+}
+
+.getstarted__link:hover{
+    color: var(--color-font)!important;
+}
+
+.getstarted__steps{
+    margin-left: 25px;
+    list-style-type: decimal;
+}
+
+.getstarted__code{
+    border-radius: 5px;
+    background-color: var(--color-header);
+} 
+
+.getstarted__codeline{
+    font-size: 16px;
+    padding: 0 10px!important;
 }

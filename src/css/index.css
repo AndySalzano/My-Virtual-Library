@@ -16,8 +16,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-@font-face {
-    font-family: 'Quantico-Bold';
-    src: local('Quantico-Bold'), url(../fonts/Quantico-Bold.ttf) format('ttf');
-}

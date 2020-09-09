@@ -9,3 +9,15 @@
 p{
     margin-bottom: 0!important;
 }
+
+/* TITLE IN THE HEADER */
+@font-face {
+    font-family: 'Sketch-Gothic-School';
+    src: local('Sketch-Gothic-School'), url(../fonts/Sketch-Gothic-School.ttf) format('truetype');
+}
+
+/* Other important information */
+@font-face {
+    font-family: 'Futura-Pt-Heavy';
+    src: local('Futura-Pt-Heavy'), url(../fonts/Futura-Pt-Heavy.otf) format('opentype');
+}

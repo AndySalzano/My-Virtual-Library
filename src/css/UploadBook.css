@@ -7,7 +7,7 @@
 
 .uploadBook__title{
     padding: 20px 40px;
-    font-family: 'Quantico-Regular';
+    font-family: 'Futura-Pt-Heavy';
     font-weight: 600;
 }
 
@@ -65,7 +65,7 @@
     padding: 10px;
     margin: 10px;
     font-size: 24px;
-    font-family: 'Quantico-Regular';
+    font-family: 'Futura-Pt-Heavy';
     transition: border 1s;
     color: var(--color-font);
 }
@@ -220,10 +220,4 @@ input:checked + .slider:before {
 
 .uploadBook__submitLbl{
     cursor: pointer;
-}
-
-
-@font-face {
-    font-family: 'Quantico-Regular';
-    src: local('Quantico-Regular'), url(../fonts/Quantico-Regular.ttf) format('truetype');
 }

@@ -31,12 +31,12 @@ hr{
 .book__title{
     font-size: 30px;
     font-weight: bold;
-    font-family: 'Quantico-Regular';
+    font-family: 'Futura-Pt-Heavy';
 }
 
 .book__author{
     font-size: 20px;
-    font-family: 'Quantico-Regular';
+    font-family: 'Futura-Pt-Heavy';
 }
 
 .book__genresContainer{
@@ -105,9 +105,4 @@ hr{
 
 .upload__delete:hover{
     background-color: var(--color-header);
-}
-
-@font-face {
-    font-family: 'Quantico-Regular';
-    src: local('Quantico-Regular'), url(../fonts/Quantico-Regular.ttf) format('truetype');
 }

@@ -31,14 +31,13 @@ li{
     font-weight: bolder;
     font-size: 30px;
     margin: 30px;
-    font-family: 'Quantico-Bold';
+    font-family: 'Futura-Pt-Heavy';
 }
 
 .dashboard__explanation{
     width: 60%;
     text-align:justify; 
     text-justify:auto; 
-    font-family: 'Quantico-Regular';
     line-height: 200%;
 }
 
@@ -68,7 +67,7 @@ li{
     width: 60%;
     text-align:justify; 
     text-justify:auto; 
-    font-family: 'Quantico-Regular';
+    font-family: 'Futura-Pt-Heavy';
     line-height: 200%;
 }
 
@@ -79,14 +78,4 @@ li{
     background-color: var(--color-header);
     border-radius: 15px;
     margin-bottom: 20px;
-}
-
-@font-face {
-    font-family: 'Quantico-Bold';
-    src: local('Quantico-Bold'), url(../fonts/Quantico-Bold.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Quantico-Regular';
-    src: local('Quantico-Regular'), url(../fonts/Quantico-Regular.ttf) format('truetype');
 }

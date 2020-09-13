@@ -79,3 +79,9 @@ li{
     border-radius: 15px;
     margin-bottom: 20px;
 }
+
+@media only screen and (max-width: 768px) {
+    .dashboard__buttons{
+        flex-direction: column;
+    }
+}

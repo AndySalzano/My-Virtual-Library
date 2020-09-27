@@ -45,13 +45,12 @@ function Book() {
 
         }
 
-        try{
-            Storage.ref(`images/${uid}`).getDownloadURL().then((url) => {
-                imgRef.current.src = url
-            })
-        }catch(e){
-            imgRef.current.src = BlackBookIcon
-        }
+        Storage.ref(`images/${uid}`).getDownloadURL().then((url) => {
+            imgRef.current.src = url
+        }).catch(function (error) {
+            imgRef.current.src = BlackBookIcon 
+        })
+        
     }, [uid]) 
 
     /**
@@ -101,8 +100,8 @@ function Book() {
                 <p className="book__language">Language: {language}</p>
                 <p className="book__language">In your possesion: {possesion ? "Yes" : "No"}</p>
                 <div className="book__options">
-                    <button className="upload__update" onClick={updateBook}>Edit info</button>
-                    <button className="upload__delete" onClick={handleShow}>Delete book</button>
+                    <button className="book__update" onClick={updateBook}>Edit info</button>
+                    <button className="book__delete" onClick={handleShow}>Delete book</button>
                 </div>
             </div>
             <Modal show={show} onHide={handleClose}>

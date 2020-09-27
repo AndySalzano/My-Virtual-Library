@@ -14,13 +14,11 @@ function BookRow(props) {
     const history = useHistory();
 
     React.useEffect(() => {
-        try{
             Storage.ref(`images/${props.book.uid}`).getDownloadURL().then((url) => {
                 imgRef.current.src = url
+            }).catch(function () {
+                imgRef.current.src = BlackBookIcon
             })
-        }catch(e){
-            imgRef.current.src = BlackBookIcon
-        }
     })
     
     /**

@@ -71,7 +71,7 @@ hr{
     display: flex;
 }
 
-.upload__update{
+.book__update{
     width: 40%;
     padding: 20px;
     margin: 20px auto;
@@ -85,7 +85,7 @@ hr{
     transition: background-color 1s;
 }
 
-.upload__delete{
+.book__delete{
     width: 40%;
     padding: 20px;
     margin: 20px auto;
@@ -99,10 +99,44 @@ hr{
     transition: background-color 1s;
 }
 
-.upload__update:hover{
+.book__update:hover{
     background-color: var(--color-header);
 }
 
-.upload__delete:hover{
+.book__delete:hover{
     background-color: var(--color-header);
+}
+
+@media only screen and (max-width: 768px) {
+    .book{
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .book__img{
+        margin: auto;
+    }
+
+    .book__data{
+        width: 90%;
+        margin: 2vh 0 0 5vw;
+    }
+
+    .book__options{
+        flex-direction: column;
+    }
+
+    .book__update{
+        width: 75%;
+        height: min-content;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .book__delete{
+        width: 75%;
+        height: min-content;
+        margin: 10px auto;
+        padding: 10px;
+    }
 }

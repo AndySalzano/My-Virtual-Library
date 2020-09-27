@@ -3,6 +3,7 @@ import '../css/Header.css';
 import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
 import CreateIcon from '@material-ui/icons/Create';
+import WhiteBookLogo from '../assets/logo_white.png';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
 import {Link, useHistory} from "react-router-dom";
 import * as ROUTES from '../constants/constants';
@@ -48,6 +49,7 @@ function Header() {
         <div className="header">
             <Link to={ROUTES.LANDING}>
                 <h1 className="header__title">My Virtual Library</h1>
+                <img className="header__logo" src={WhiteBookLogo} alt="logo" />
             </Link>
             <form id="uploadBookForm" className="header__search" onSubmit={e => submitSearch(e)} noValidate>
                 <IconButton className="header__searchBtn" type="submit">

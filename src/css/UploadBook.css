@@ -221,3 +221,48 @@ input:checked + .slider:before {
 .uploadBook__submitLbl{
     cursor: pointer;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .uploadBook__title{
+        padding: 10px 10px;
+        font-family: 'Futura-Pt-Heavy';
+        font-weight: 600;
+    }
+
+    .uploadBook__book{
+        flex-direction: column;
+    }
+
+    .uploadBook_imageWrapper{
+        width: max-content;
+        margin: auto;
+        align-items: center;
+    }
+
+    .uploadBook__select{
+        width: 90%;
+        min-width: 300px;
+        margin: 20px 0px;
+        padding: 10px;
+        position: relative;
+    }
+
+    .uploadBook_toggle{
+        width: 90%;
+        margin: 10px 10px;
+    }
+    
+    .uploadBook__switch {
+        margin-right: 10px;
+    }
+
+    .uploadBook__submit{
+        width: 80%;
+        padding: 10px;
+        margin: 20px auto;
+        font-size: 24px;
+    }
+      
+    
+}

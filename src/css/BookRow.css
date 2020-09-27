@@ -60,3 +60,27 @@ hr{
     text-align: center;
     cursor: default;
 }
+
+@media only screen and (max-width: 768px) {
+    .bookrow{
+        margin: 1vh 5vw 0vh;
+    }
+
+    .bookrow__img{
+        min-width: 20vw;
+    }
+
+    .bookrow__topleft{
+        width: 40vw;
+    }
+
+    .bookrow__genres{
+        flex-direction: column;
+    }
+
+    .bookrow__genre{
+        margin: 0;
+        padding: 5px;
+        border-radius: 0;
+    }
+}

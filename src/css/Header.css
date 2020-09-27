@@ -18,6 +18,10 @@ a{
     cursor: pointer;
 }
 
+.header__logo{
+    display: none!important;
+}
+
 .header__search{
     margin-left: 50px;
     background-color: var(--color-primary);
@@ -90,4 +94,55 @@ a{
 
 ::-ms-input-placeholder { /* Microsoft Edge */
     color: var(--color-font);;
+}
+
+@media only screen and (max-width: 768px) {
+    .header__title{
+        margin-left: 20px;
+        font-family: 'Sketch-Gothic-School';
+        cursor: pointer;
+        display: none;
+    }
+
+    .header__logo{
+        width: 32px;
+        height: 32px;
+        margin: 0 0 0 10px;
+        display: inline-block!important;
+    }
+
+    .header__search{
+        max-width: 275px;
+        height: 50%;
+        margin-left: 10px;
+        align-items: center;
+    }
+
+    .header__searchIcon{
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .header__searchBtn{
+        width: 10px;
+        height: 10px;
+    }
+
+    .header__input{
+        width: 175px;
+        height: 50%;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .header__options{
+        margin-right: 5px;
+        padding: 5px;
+    }
+
+    .header__optionsIcon{
+        max-width: 75%;
+        max-height: 75%;
+        margin: 0px auto;
+    }
 }

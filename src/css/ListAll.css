@@ -10,3 +10,11 @@
     font-family: 'Futura-Pt-Heavy';
     font-weight: 600;
 }
+
+@media only screen and (max-width: 768px) {
+    .listall__title{
+        padding: 10px 10px;
+        font-family: 'Futura-Pt-Heavy';
+        font-weight: 600;
+    }
+}

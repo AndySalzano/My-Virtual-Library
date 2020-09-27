@@ -43,13 +43,11 @@ function EditBook() {
 
         }
 
-        try{
             Storage.ref(`images/${uid}`).getDownloadURL().then((url) => {
                 imgRef.current.src = url
+            }).catch(function(error){
+                imgRef.current.src = BlackBookIcon
             })
-        }catch(e){
-            imgRef.current.src = BlackBookIcon
-        }
     }, [uid]) 
 
     /* The following handle functions update the value of each input into the state variable each time the user changes any value */
